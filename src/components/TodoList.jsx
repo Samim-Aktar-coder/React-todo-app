@@ -6,7 +6,7 @@ function TodoList({ todo }) {
   const [isEditable, setIsEditable] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
 
-  const { updateTodo, deleteTodo, toggleComplete } = useTodo();
+  const { updateTodo, deleteTodo, toggleComplete, showAlert } = useTodo();
 
   return (
     <div
@@ -45,6 +45,9 @@ function TodoList({ todo }) {
               setIsEditable((prev) => !prev);
               updateTodo(todo.id, { ...todo, todo: todoMsg });
             }
+            if (isEditable) {
+              showAlert("green", "Task edited successfully");
+            }
           }}
           disabled={isCompleted}
         >
@@ -52,7 +55,10 @@ function TodoList({ todo }) {
         </button>
         <button
           className='sm:w-11 w-8 h-8 sm:h-full flex items-center justify-center sm:text-xl text-base bg-purple-600 cursor-pointer rounded-md sm:rounded-lg active:scale-[.85] duration-300'
-          onClick={() => deleteTodo(todo.id)}
+          onClick={() => {
+            deleteTodo(todo.id);
+            showAlert("red", "Task deleted successfully");
+          }}
         >
           ❌
         </button>

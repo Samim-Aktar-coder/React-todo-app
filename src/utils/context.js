@@ -11,7 +11,8 @@ export const TodoContext = createContext({
     addTodo: (todo) => { },
     updateTodo: (id, todo) => { },
     deleteTodo: (id) => { },
-    toggleComplete: (id, todo) => { }
+    toggleComplete: (id, todo) => { },
+    showAlert: (color, msg) => { }
 });
 
 export const useTodo = () => { return useContext(TodoContext); };

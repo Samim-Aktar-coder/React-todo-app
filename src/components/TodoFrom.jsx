@@ -3,13 +3,16 @@ import { useTodo } from "../utils";
 
 function TodoFrom() {
   const [todoMsg, setTodoMsg] = useState("");
-  const { addTodo } = useTodo();
+  const { addTodo, showAlert } = useTodo();
 
   const addItem = (e) => {
     e.preventDefault();
     if (todoMsg) {
       addTodo(todoMsg);
       setTodoMsg("");
+      showAlert("green", "Task added successfully");
+    } else {
+      showAlert("red", "Please write something");
     }
   };
 

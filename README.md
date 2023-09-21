@@ -13,7 +13,7 @@ Tech stack I use to build this app:
 - REACT useContext Hook
 - Localstorage
 - JSX
-- CSS
+- Tailwind CSS
 
 ## 🙋‍♂️ Author
 
