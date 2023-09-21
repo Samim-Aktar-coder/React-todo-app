@@ -78,7 +78,7 @@ function App() {
         ></span>
       </div>
 
-      <div className='bg-gradient-to-b from-emerald-600 from-40% to-green-500 to-80% min-h-screen text-white pt-32'>
+      <div className='bg-gradient-to-b from-emerald-600 from-40% to-green-500 to-80% min-h-screen text-white pt-28'>
         <div className='lg:w-1/2 md:w-4/5 w-[95%] max-h-[80vh] mx-auto rounded-xl sm:p-4 p-2 bg-white bg-opacity-20 backdrop-blur-xl relative shadow-black shadow-md overflow-hidden'>
           <div className='absolute -bottom-4 -right-1 w-28 h-28 blur-2xl bg-pink-700 z-[1]' />
           <div className='absolute -top-1 -left-1 w-28 h-28 blur-[50px] bg-orange-700 z-[1]' />
