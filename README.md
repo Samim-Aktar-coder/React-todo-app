@@ -1,4 +1,4 @@
-[![MasterHead](https://raw.githubusercontent.com/Samim-Aktar-coder/React-todo-App/main/Github%20Banner.png)](https://samim-todo-app.netlify.app)
+[![MasterHead](https://image-link-website.netlify.app/img/todo-website.png)](https://samim-todo-app.netlify.app)
 
 ### Live: [Click Here](https://samim-todo-app.netlify.app)
 
@@ -17,7 +17,7 @@ Tech stack I use to build this app:
 
 ## 🙋‍♂️ Author
 
-- [@SamimAktar](https://github.com/Samim-Aktar-coder)
+- [@SamimAktar](https://github.com/samimaktar-coder)
 
 ## Installation
 
